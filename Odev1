@@ -1,0 +1,57 @@
+fun main() {
+    // Genel Bilgiler
+    val sehir = "İstanbul"
+    val ulke = "Türkiye"
+    val telefon = "0555 123 45 67"
+    val postaKodu = "34000"
+    val email = "ornek@example.com"
+    val meslek = "Öğretmen"
+    val stokMiktari = 150
+    val musteriAdi = "Ahmet Yılmaz"
+    val bakiye = 2500.75
+    val dogumGunu = "1998-04-15"
+    val medeniDurum = "Bekar"
+    val urunYorum = "Ürün beklediğim gibi geldi."
+
+    // Sipariş ve Ödeme Bilgileri
+    val odemeTarihi = "2025-04-26"
+    val odeme = 349.99
+    val siparisAdeti = 2
+    val arabaModeli = "Toyota Corolla"
+    val kitapAdi = "Kotlin Programlama"
+    val yayinlamaTarihi = "2023-09-15"
+    val indirimMiktari = 15
+    val odaSayisi = 3
+    val enlem = 41.0082
+    val boylam = 28.9784
+    val urunAdi = "Bluetooth Kulaklık"
+    val yemekFiyati = 120.5
+
+    // Teknoloji ve Ürün Bilgileri
+    val marka = "Samsung"
+    val muzikAdi = "Shape of You"
+    val videoSuresi = "03:45"
+    val urunPuani = 4.7
+    val resimAdi = "manzara.jpg"
+    val dosyaFormati = "jpg"
+    val renk = "Mavi"
+    val renkKodu = "#0000FF"
+    val telefonModeli = "Galaxy S24"
+    val ekranBoyutu = 6.5 // inç
+    val agirlik = 178 // gram
+
+    // Diğer Bilgiler
+    val ulusalGun = "Cumhuriyet Bayramı"
+    val tatilGunu = "2025-04-30"
+    val rezervasyonTarihi = "2025-05-10"
+    val sokakAdi = "Atatürk Caddesi"
+    val otobusHatti = "34AS"
+    val kalanDakika = 12
+    val takipKodu = "ABC123456789"
+    val kuponSuresi = "2025-05-31"
+    val kuponKodu = "INDIRIM20"
+    val faturaAdresi = "Beşiktaş, İstanbul"
+
+    // Çıktı almak istersek
+    println("Şehir: $sehir, Ülke: $ulke, Telefon: $telefon")
+}
