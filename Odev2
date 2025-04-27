@@ -1,0 +1,88 @@
+// 1. Dereceyi Fahrenheit'a çeviren metod
+fun dereceyiFahrenheitCevir(celsius: Double): Double {
+    return celsius * 1.8 + 32
+}
+
+// 2. Dikdörtgenin çevresini hesaplayan metod
+fun dikdortgenCevresiHesapla(kisaKenar: Int, uzunKenar: Int): Int {
+    return 2 * (kisaKenar + uzunKenar)
+}
+
+// 3. Sayının faktöriyelini hesaplayan metod
+fun faktoriyelHesapla(sayi: Int): Int {
+    var carpim = 1
+    for (i in 1..sayi) {
+        carpim *= i
+    }
+    return carpim
+}
+
+// 4. Kelime içindeki "a" harfini sayan metod
+fun aHarfiniSay(kelime: String): Int {
+    var sayac = 0
+    for (harf in kelime) {
+        if (harf.equals('a', ignoreCase = true)) {
+            sayac++
+        }
+    }
+    return sayac
+}
+
+// Test için main fonksiyonu
+fun main() {
+    // 1. derece -> fahrenheit
+    val derece = 30.0
+    println("$derece °C = ${dereceyiFahrenheitCevir(derece)} °F")
+
+    // 2. dikdörtgen çevresi
+    val kisa = 5
+    val uzun = 10
+    println("Dikdörtgen çevresi: ${dikdortgenCevresiHesapla(kisa, uzun)} birim")
+
+    // 3. faktöriyel hesaplama
+    val sayi = 5
+    println("$sayi sayısının faktöriyeli: ${faktoriyelHesapla(sayi)}")
+
+    // 4. kelime içinde 'a' harfi sayısı
+    val kelime = "Ankara"
+    println("'$kelime' kelimesinde 'a' harfi sayısı: ${aHarfiniSay(kelime)}")
+}
+
+
+// 1. Dereceyi Fahrenheit'a çeviren metod
+fun dereceToFahrenheit(celsius: Double): Double {
+    return celsius * 1.8 + 32
+}
+
+// 2. Kenarları verilen dikdörtgenin çevresini hesaplayan metod
+fun dikdortgenCevresi(kisaKenar: Int, uzunKenar: Int): Int {
+    return 2 * (kisaKenar + uzunKenar)
+}
+
+// 3. Sayının faktöriyelini hesaplayan metod
+fun faktoriyelHesapla(sayi: Int): Int {
+    var sonuc = 1
+    for (i in 1..sayi) {
+        sonuc *= i
+    }
+    return sonuc
+}
+
+// 4. Kelime içinde kaç adet 'a' harfi olduğunu gösteren metod
+fun harfSayisi(kelime: String, harf: Char = 'a'): Int {
+    var adet = 0
+    for (c in kelime) {
+        if (c.equals(harf, ignoreCase = true)) {
+            adet++
+        }
+    }
+    return adet
+}
+
+// Test etmek için main fonksiyonu
+fun main() {
+    println("25 derece Fahrenheit cinsinden: ${dereceToFahrenheit(25.0)} °F")
+    println("Dikdörtgen çevresi (5,10): ${dikdortgenCevresi(5, 10)} birim")
+    println("5 sayısının faktöriyeli: ${faktoriyelHesapla(5)}")
+    println("'Ankara' kelimesinde 'a' harfi adedi: ${harfSayisi("Ankara")}")
+}
